@@ -1,0 +1,403 @@
+.invoice-table {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 176px;
+    border-radius: 7px;
+    margin: 18px;
+    box-shadow: 0px 0px 12px 5px rgba(34, 60, 80, 0.18);
+
+    .client-label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+
+        .client-name {
+            font-size: 18px;
+            margin-right: 15px;
+        }
+    }
+
+    .select-all-btn{
+        font-size: 20px;
+        margin: 10px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.75);
+
+        .ant-checkbox-inner, .ant-checkbox-input {
+            transform: scale(1.25);
+            border-color: #03146f;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #03146f;
+            border-color: #03146f;
+        }
+
+        .ant-checkbox-checked:after{
+            border-color: #03146f !important;
+        }
+    }
+
+    p {
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .badge-wrapper {
+        width: 100%;
+    }
+
+    .ant-tree-checkbox-inner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #d9d9d9;
+    }
+
+    .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner,
+    .ant-tree-checkbox-wrapper:hover .ant-tree-checkbox-inner,
+    .ant-tree-checkbox:hover .ant-tree-checkbox-inner {
+        border-color: $primary-color;
+    }
+
+    .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+        background-color: $primary-color;
+        width: 10px;
+        height: 10px;
+    }
+
+    .ant-tree-switcher .ant-select-tree-switcher-icon,
+    .ant-tree-switcher .ant-tree-switcher-icon {
+        font-size: 16px;
+        margin-top: 7px;
+        margin-right: 7px;
+    }
+
+    .ant-tree-checkbox {
+        top: auto;
+        margin-top: 2px;
+        margin-right: 6px;
+    }
+
+    .project-row {
+        margin-left: 15px;
+        width: 80vw;
+
+        .ant-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            p {
+                margin-left: 7px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .anticon-plus {
+            font-size: 20px;
+            margin-left: -55px;
+            padding: 3px;
+            background: #03146f17;
+            border-radius: 7px;
+        }
+    }
+
+    .work-orders-table-header,
+    .metric-header-row {
+        width: 83vw;
+        cursor: default;
+    }
+
+    .metric-header-row {
+        margin-left: 28px;
+    }
+
+    .work-orders-table-header {
+        margin-left: 55px;
+    }
+
+    .work-order-row,
+    .metric-row {
+        width: 83vw;
+        height: 35px;
+
+        p {
+            font-weight: 400;
+        }
+
+        .ant-input,
+        .ant-picker {
+            border: none;
+            box-shadow: none;
+            font-size: 15px;
+            font-weight: 500;
+            background: inherit;
+            width: 70%;
+            height: 30px;
+        }
+
+        .anticon-minus {
+            cursor: pointer;
+            font-size: 20px;
+            padding: 3px;
+            background: #03146f17;
+            border-radius: 7px;
+        }
+
+        .ant-picker-input > input {
+            font-size: 16px;
+        }
+
+        .ant-input:hover,
+        .ant-input:focus,
+        .ant-picker:hover,
+        .ant-picker:focus {
+            box-shadow: 0 0 0 2px #020b3dba;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    .metric-row {
+        width: 72.5vw;
+    }
+
+    .sum-of-total-row {
+        margin-left: 75.5vw;
+
+        p {
+            width: max-content;
+        }
+    }
+}
+
+.footer-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.footer-actions,
+.filter-header,
+.create-invoice-modal {
+    .ant-btn {
+        margin-right: 7px;
+        margin-top: -10px;
+        border-width: 2px;
+        font-weight: 500;
+        font-size: 15px;
+        height: 34px;
+    }
+
+    .ant-btn-primary {
+        border-width: 2px;
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .save-changes {
+        margin-right: 63px;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        background: $primary-color;
+        color: #fff !important;
+        border-color: $primary-color;
+    }
+
+    .ant-btn-primary:focus,
+    .ant-btn-primary:hover {
+        color: $primary-color !important;
+        background: #fff;
+    }
+}
+
+.create-invoice-modal {
+    .ant-btn {
+        margin-right: 0px;
+        margin-top: -1px;
+    }
+
+    .ant-modal-body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+
+        .invoice-file-block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            h2 {
+                margin-bottom: 0px;
+                margin-left: 10px;
+            }
+
+            div {
+                display: inherit;
+            }
+        }
+    }
+
+    .anticon-file-pdf {
+        font-size: 42px;
+    }
+
+    .download-all {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.filter-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 15px;
+    padding-bottom: 5px;
+    box-shadow: 0px 0px 12px 5px rgba(34, 60, 80, 0.18);
+
+    .custom-select {
+        width: 15%;
+    }
+
+    .anticon-plus {
+        cursor: pointer;
+        font-size: 28px;
+        transform: rotate(45deg);
+        margin-bottom: 14px;
+        margin-left: -20px;
+    }
+
+    .ant-btn-primary {
+        margin-bottom: 5px;
+    }
+
+    .ant-picker-focused,
+    .ant-picker:hover {
+        border-color: $primary-color;
+        border-right-width: 2px !important;
+    }
+
+    .ant-picker-focused {
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 2px #03136f29;
+        box-shadow: 0 0 0 2px #03136f29;
+    }
+
+    .ant-picker-range .ant-picker-active-bar {
+        background: $primary-color;
+    }
+
+    .ant-picker-input > input {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .ant-picker {
+        border: 2px solid #d9d9d9;
+        margin-bottom: 17px;
+    }
+}
+
+.pagination-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pdf-doc-wrapper {
+    position: absolute;
+    left: -3999px;
+    width: 100%;
+
+    .report-table thead {
+        height: 0px;
+    }
+}
+
+.invoice-print-header {
+    display: flex;
+    align-items: center;
+
+    .invoice-print {
+        margin-left: 12px;
+    }
+}
+
+.page-pdf-header {
+    position: relative !important;
+    height: 20px !important;
+    top: 0mm;
+    width: 100%;
+    font-size: 9px;
+    margin-bottom: 30px;
+    display: inline-table;
+
+    #report-logo-img {
+        width: 102px;
+        height: 70px;
+    }
+}
+
+.page-pdf-header table:first-child tbody tr td b {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 340px;
+}
+
+.page-pdf-header table:last-child td {
+    width: 350px;
+}
+
+.page-pdf-header table:first-child tbody tr td div {
+    font-size: 10px;
+    padding-bottom: 30px;
+    padding-left: 400px;
+}
+
+.page-pdf-header hr {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}

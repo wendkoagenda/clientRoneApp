@@ -1,0 +1,372 @@
+.customer-portal-layout {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(173, 173, 173, 0.2);
+    padding: 10px 10px 10px 10px;
+    animation: anim 0.3s ease-out;
+
+    .manage-projects-column:hover {
+            cursor: pointer;
+    
+            .manage-projects-cell {
+                color: #40a9ff;
+            }
+    
+            .anticon {
+                color: #40a9ff;
+            }
+        }
+
+    .custom-popover {
+        width: 20%;
+    }
+
+    .ant-table-thead {
+        .ant-table-cell {
+            pointer-events: none;
+        }
+    }
+
+    .custom-table-row {
+        height: 86px;
+
+        .ant-table-cell {
+            height: auto;
+        }
+    }
+
+    .ant-switch-checked {
+        background-color: $primary-color;
+    }
+
+    .ant-table-tbody > tr > td,
+    .ant-table-thead > tr > th,
+    .ant-table tfoot > tr > td,
+    .ant-table tfoot > tr > th {
+        position: relative;
+        padding: 7px;
+        overflow-wrap: break-word;
+    }
+
+    .ant-table-column-sorter-down.active,
+    .ant-table-column-sorter-up.active {
+        color: $primary-color;
+    }
+
+    .ant-table-thead {
+        .ant-table-cell {
+            font-size: 18px;
+
+            .anticon {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .custom-select {
+        margin-top: -3px;
+    }
+
+    .custom-input {
+        max-width: 350px;
+    }
+
+    .user-name-col {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+        margin-bottom: 0px;
+    }
+
+    .info-col {
+        display: flex;
+        align-items: center;
+
+        .anticon {
+            font-size: 20px;
+        }
+
+        .col-text {
+            font-weight: 500;
+            font-size: 16px;
+            padding-left: 15px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .table-actions {
+        display: flex;
+        justify-content: space-around;
+
+        .ant-btn {
+            border: none;
+            background: inherit;
+            box-shadow: none;
+        }
+
+        .anticon {
+            font-size: 26px;
+            color: $primary-color;
+        }
+    }
+}
+
+.table-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.table-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-manage-projects-layout {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    .col-text{
+        font-size: 14px;
+    }
+
+    .projects-top-container{
+        display: flex;
+        flex-direction: column;
+    
+        h1{
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .search-group{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .actions-section {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+    .projects-section {
+        height: 90vh;
+        width: 35%;
+        @extend %container-block;
+        background: #fff;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        .anticon-plus-circle, .anticon-close-circle{
+            color: #03146F;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .ant-list-item{
+            background-color: #00dc7d40;
+            border-radius: 16px;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 2%;
+        }
+
+        .selected {
+            border: 2px dashed rgb(220, 220, 220);
+            color: rgb(220, 220, 220);
+            pointer-events: none;
+            background: inherit;
+
+            .anticon-plus-circle, .anticon-close-circle{
+                color: #bfbfbf;
+                cursor: default;
+                font-size: 18px;
+            }
+        }
+
+        .search-input{
+            min-width: 400px;
+        }
+
+        .action-btn-group {
+            display: flex;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        
+            .custom-search-btn {
+                margin-bottom: 10px;
+                border-radius: 20px;
+                transition: all 400ms;
+
+                .ant-btn{
+                   width: 140px;
+                }
+            }
+        
+            .custom-search-btn:hover,
+            .custom-search-btn:focus {
+                box-shadow: 3px 2px 5px 5px rgba(122, 122, 122, 0.2);
+                transition: all 400ms;
+                transform: translateY(-5px);
+            }
+    
+            .cancel-btn {
+                height: 28px;
+                width: 28px;
+                border: none;
+                border-color: inherit;
+                border-radius: 50%;
+                margin-left: 10px;
+                background: inherit;
+                color: #bfbfbf;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+        
+                .anticon {
+                    font-size: 28px;
+                }
+            }
+            .cancel-btn:hover {
+                color: #40a9ff;
+            }
+        }
+    }
+
+    .user-info-section {
+        @extend %container-block;
+        width: 64%;
+        height: 20%;
+        
+        .anticon {
+            color: #03146F;
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        .user-info {
+            padding: 17px;
+
+            .title-row {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px !important;
+            }
+
+            .ant-input-disabled {
+                cursor: default;
+            }
+        
+            .ant-input[disabled] {
+                cursor: default;
+            }
+        
+            .property-col {
+                font-size: 14px;
+                width: 45%;
+            }
+        
+            .value-col {
+                font-size: 16px;
+                width: 50%;
+            }
+
+            .bottom-row {
+                margin-bottom: 0 !important;
+            }
+        }
+        
+    }
+
+    .projects-wrapper {
+       height: 62vh;
+       overflow-y: auto;
+       margin-top: 20px;
+       border-radius: 10px;
+    }
+
+    .projects-wrapper::-webkit-scrollbar {
+        width: 0.45em;
+    }
+    
+    .projects-wrapper::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: $primary-color;
+    }
+
+    .projects-drop-area {
+        @extend %column-center;
+
+        min-height: 150px;
+        padding-top: 7px;
+        border: dashed 2px #bfbfbf;
+
+        .drop-card-style{
+            min-height: 60px;
+            margin-bottom: 7px;
+            background-color: #dae9ff;
+
+            .ant-row{
+                margin-bottom: 0px !important;
+                margin-top: 8px;
+            }
+        }
+
+        .projects-drop-text {
+            @extend %column-center;
+            width: 100%;
+            font-weight: 500;
+            color: #bfbfbf;
+            font-size: 15px;
+            margin-bottom: 7px;
+
+            .ant-empty-image {
+                height: 80px;
+            }
+        }
+
+        .payments-checkbox {
+            margin-right: 2%;
+        }
+
+        .ant-checkbox-inner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d9d9d9;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+
+        .ant-checkbox-input:focus + .ant-checkbox-inner,
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+        .ant-checkbox:hover .ant-checkbox-inner {
+            border-color: $primary-color;
+        }
+
+        .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+            background-color: $primary-color;
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .projects-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px !important;
+    }
+}

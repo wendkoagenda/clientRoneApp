@@ -1,0 +1,149 @@
+.my-profile-layout {
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 50px 50px 50px 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    //transition: all .6s ease-out, opacity .6s ease-out;
+    animation: anim .3s ease-out;
+
+    .signature-label {
+        .property-label {
+            padding-bottom: 10px;
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .custom-input {
+        padding-top: 20px;
+
+        .ant-input {
+            width: 16vw;
+        }
+    }
+
+    .user-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .user-property{
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 6vw;
+        }
+    }
+
+    .property-label {
+        color: $primary-color;
+        margin-bottom: -8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .user-password {
+        margin-top: 50px;
+        font-size: 20px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .change-password-block {
+            display: flex;
+            flex-direction: column;
+
+            a:hover {
+                color: rgb(11, 136, 252);
+            }
+        }
+
+        .password-input {
+
+            .ant-form {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .custom-input {
+                margin-right: 4vw;
+            }
+        }
+
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    .edit-actions {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        justify-content: flex-end;
+
+        .custom-primary-btn, .custom-default-btn {
+            .ant-btn {
+                height: 50px;
+                font-size: 18px;
+                border-radius: 30px;
+            }
+        }
+
+        .custom-default-btn {
+            margin-right: 15px;
+
+            .ant-btn:hover {
+                background: $background-color;
+            }
+        }
+
+        .custom-default-btn > * {
+            box-shadow: none !important;
+        }
+    }
+
+    .divider-line {
+        height: 2px;
+        background-color: black;
+        width: 100%;
+        box-sizing: content-box;
+    }
+
+}
+
+.edit-btn {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .ant-btn {
+        margin-right: 2%;
+        background-color: $primary-color;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+    }
+
+    .anticon {
+        font-size: 22px;
+        color: #fff;
+    }
+}

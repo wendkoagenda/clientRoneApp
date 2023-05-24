@@ -1,0 +1,183 @@
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 700px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 102px;
+    margin-right: 20px;
+}
+
+.filter-buttons-concrete-core {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 700px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 149px;
+    margin-right: 20px;
+}
+
+.break-list {
+    .ant-table-body::-webkit-scrollbar {
+        width: 0.45em;
+    }
+    
+    .ant-table-body::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+    }
+}
+
+.tested-by-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editable-break-list-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.anticon-edit {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.anticon-edit:focus,
+.anticon-edit:hover {
+    color: $primary-color;
+}
+
+.break-list-search-by-date-action-btn {
+    margin-right: 5px;
+    width: 145px !important;
+}
+
+.break-list-clear-search-by-date-action-btn {
+    margin-right: 5px;
+    width: 74px !important;
+}
+
+.search-by-date-block {
+    display: flex;
+    align-items: baseline;
+
+    .average-diameter {
+        margin-right: 50px;
+        width: 247px !important
+    }
+}
+
+.update-tested-popover {
+    width: 350px;
+
+    .tested-popover-content {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ant-btn {
+        margin-top: -10px;
+        border-width: 2px;
+        font-weight: 500;
+        font-size: 15px;
+        height: 32px;
+    }
+
+    .ant-btn-primary {
+        border-width: 2px;
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        background: $primary-color;
+        color: #fff !important;
+        border-color: $primary-color;
+    }
+
+    .ant-btn-primary:focus,
+    .ant-btn-primary:hover {
+        color: $primary-color !important;
+        background: #fff;
+    }
+}
+
+.edit-test-modal {
+    .ant-btn {
+        margin-top: -10px;
+        border-width: 2px;
+        font-weight: 500;
+        font-size: 15px;
+        height: 34px;
+    }
+
+    .ant-btn-primary {
+        border-width: 2px;
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        background: $primary-color;
+        color: #fff !important;
+        border-color: $primary-color;
+    }
+
+    .ant-btn-primary:focus,
+    .ant-btn-primary:hover {
+        color: $primary-color !important;
+        background: #fff;
+    }
+
+    .form-list-label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        p {
+            margin-bottom: 0px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $primary-color;
+        }
+
+        .anticon-plus {
+            color: $primary-color;
+            font-size: 26px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            padding: 6px;
+        }
+    }
+
+    .graphs-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        border-radius: 7px;
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 80%;
+
+        .anticon-minus,
+        .anticon-plus {
+            color: $primary-color;
+            font-size: 26px;
+            cursor: pointer;
+        }
+    }
+}

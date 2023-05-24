@@ -1,0 +1,172 @@
+.invoice-journal-layout {
+    .view-mode-group {
+        border-radius: 20px;
+        margin-left: 8px;
+
+        font-weight: 500 !important;
+        box-shadow: 0px 2px 5px 5px rgba(173, 173, 173, 0.2) !important;
+        border: none !important;
+
+        .ant-radio-button-wrapper:not(:first-child):before {
+            width: 2px;
+        }
+
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+
+        .ant-radio-button-wrapper {
+            border-width: 2px 2px 2px 0;
+            font-size: 16px;
+        }
+
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+            border-color: $primary-color;
+        }
+
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):before {
+            background-color: $primary-color;
+        }
+
+        .view-mode-label:hover,
+        .view-mode-label:focus {
+            color: $primary-color;
+        }
+
+        .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]).ant-radio-button-wrapper:first-child {
+            border-right-color: $primary-color;
+        }
+
+        span {
+            min-height: 38px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .view-mode-label {
+            height: 40px;
+        }
+
+        .view-mode-left-label {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-left-width: 2px;
+        }
+
+        .view-mode-right-label {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+
+    .cancel-btn {
+        margin-left: 18px;
+    }
+
+    .ant-table-wrapper {
+        width: 100%;
+    }
+
+    .table-actions {
+        display: flex;
+        justify-content: space-around;
+
+        .ant-btn {
+            border: none;
+            background: inherit;
+            box-shadow: none;
+        }
+
+        .anticon {
+            font-size: 26px;
+            color: $primary-color;
+        }
+    }
+
+    .custom-table-row {
+        height: auto;
+
+        .ant-table-cell {
+            height: auto;
+        }
+    }
+
+    .ant-table-column-sorter-down.active,
+    .ant-table-column-sorter-up.active {
+        color: $primary-color;
+    }
+
+    .ant-table-column-sorters {
+        span {
+            font-size: 18px;
+
+            .anticon {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .ant-table-thead {
+        .ant-table-cell:not(.ant-table-column-sorters) {
+            font-size: 18px;
+        }
+    }
+
+    .client-label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+
+        .client-name {
+            font-size: 18px;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .project-row {
+        margin-left: 15px;
+        width: 80vw;
+
+        .ant-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .row-label {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .row-value {
+                margin-left: 7px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .work-orders-table-header {
+        width: 83vw;
+        cursor: default;
+        font-weight: 500;
+    }
+
+    .work-order-row,
+    .metric-row {
+        width: 83vw;
+        height: 35px;
+
+        p {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,211 @@
+.journal-layout {
+    border-radius: 10px;
+    margin-top: 9px;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    animation: anim .3s ease-out;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px rgba(173, 173, 173, 0.2);
+
+    .delete-tag-action {
+        background: #ffebeb;
+        font-weight: 500;
+        border-width: 1.7px;
+        border-radius: 4px;
+        border-color: #ff6f76;
+    }
+
+    .ant-table-column-sorter-down.active, .ant-table-column-sorter-up.active {
+        color: $primary-color;
+    }
+
+    .ant-table-wrapper {
+        width: 100%;
+    }
+
+    .ant-table-thead > tr > th {
+        font-size: 18px;
+    }
+
+    .ant-table-tbody > tr > td {
+        font-size: 16px;
+        font-weight: 500;
+
+        p {
+            margin-bottom: 0px;
+        }
+    }
+
+    .ant-pagination-item-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: $primary-color;
+        border-width: 2px;
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .ant-pagination-item:hover {
+        border-color: $primary-color;
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .ant-pagination-item-link:hover {
+        border-color: $primary-color;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+        border-color: $primary-color;
+    }
+
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    .ant-tag {
+        border-width: 2px;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+
+    .table-actions {
+        display: flex;
+        justify-content: space-around;
+
+        .ant-btn {
+            border: none;
+            background: inherit;
+            box-shadow: none;
+        }
+
+        .anticon {
+            font-size: 26px;
+            color: $primary-color;
+        }
+    }
+}
+
+.reset-btn {
+    margin-left: 25px;
+    margin-top: 9px;
+
+    .ant-btn-lg {
+        padding: 4px 0;
+        border-radius: 50%;
+        color: #fff;
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .anticon {
+        font-size: 28px;
+    }
+
+    .ant-btn {
+        border-width: 2px;
+        color: rgb(255, 255, 255);
+    }
+
+    .ant-btn:focus {
+        border-color: $primary-color;
+    }
+}
+
+.search-dropdown {
+    padding: 20px 5px 0px 5px;
+    display: flex;
+    flex-direction: row;
+
+    .custom-input {
+        width: 20vw;
+    }
+
+    .custom-primary-btn {
+        margin-left: 5px;
+    }
+}
+
+.checkbox-dropdown {
+    padding: 8px 15px 8px 8px;
+
+    .ant-btn-primary:focus, .ant-btn-primary:hover {
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-btn-primary {
+        background: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-btn {
+        padding: 0px 15px;
+        font-weight: 500;
+        border: 2px solid $primary-color;
+    }
+
+    .ant-checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ant-checkbox-wrapper {
+        margin-left: 0px;
+        margin-bottom: 4px;
+
+        span {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .ant-row {
+        margin-bottom: 0px;
+    }
+
+    .ant-checkbox-inner:after {
+        top: 45%;
+        left: 25%;
+        width: 5.71428571px;
+        height: 12px;
+    }
+
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+
+    .ant-checkbox-inner {
+        width: 23px;
+        height: 23px;
+        border: 2px solid rgb(156, 156, 156);
+    }
+
+    .ant-checkbox-input:focus + .ant-checkbox-inner, .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner {
+        border-color: $primary-color;
+    }
+
+    .ant-checkbox-checked:after {
+        border: 1px solid $primary-color;
+    }
+}

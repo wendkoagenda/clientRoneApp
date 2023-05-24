@@ -1,0 +1,83 @@
+.project-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px 5px rgba(173, 173, 173, 0.2);
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: max-content;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    animation: anim 0.3s ease-out;
+
+    .ant-input-disabled {
+        cursor: default;
+    }
+
+    .ant-input[disabled] {
+        cursor: default;
+    }
+
+    .property-col {
+        font-size: 14px;
+        width: 45%;
+    }
+
+    .value-col {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .client-prop-col,
+    .contact-prop-col {
+        font-weight: 500;
+        font-size: 16px;
+        width: 45%;
+    }
+
+    .client-value-col,
+    .contact-value-col {
+        font-weight: 500;
+        font-size: 16px;
+        width: 45%;
+    }
+
+    .client-item,
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    .divider {
+        margin-top: 5px !important;
+    }
+
+    .project-details-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        .ant-btn:hover {
+            color: $primary-color;
+        }
+
+        .ant-btn:focus {
+            color: $primary-color;
+        }
+    }
+
+    .client-details-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .contact-details-title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+.site-manage-action-buttons-group {
+    display: flex;
+
+    .add-new-site-button {
+        margin-left: auto;
+        margin-right: 22px;
+    }
+}
+.sites-layout{
+    .custom-table-row:hover {
+        cursor: pointer;
+    
+        .col-text, .anticon  {
+            color: $focus-color;
+        }
+    
+        .table-actions{
+            .col-text, .anticon  {
+                color: initial;
+            }
+        }
+    }
+}

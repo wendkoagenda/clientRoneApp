@@ -1,0 +1,394 @@
+@import "./defines";
+@import "./animations";
+
+@import "../../app/components/common/common.scss";
+@import "../../app/components/user-manage-table/management-table.scss";
+@import "../../app/pages/user-profile/user-profile-style.scss";
+@import "../../app//pages/client-management/client-management.scss";
+@import "../../app/components/client-management/reserved-employee.scss";
+@import "../../app//pages/projects/projects.scss";
+@import "../../app/pages/journal/journal.scss";
+@import "../../app/pages/dispatch-management/dispatch.scss";
+@import "../../app/pages/dispatch-process-page/dispatch-process.scss";
+@import "../../app/pages/sites-management/sites.scss";
+@import "../../app/pages/reports/reports.scss";
+@import "../../app/pages/reports/report-scheme-style.scss";
+@import "../../app/pages/break-list/break-list.style.scss";
+@import "../../app/pages/budget-sheet-admin/budget-sheet.scss";
+@import "../../app/pages/invoice/invoice.scss";
+@import "../../app/pages/invoice-journal/invoice-journal.scss";
+@import "../../app/pages/projects/budget-comparison/budget-comparison.scss";
+@import "../../app/pages/report-list/report-list.scss";
+@import "../../app/pages/user-management/user-management.scss";
+@import "../../app/pages/customer-portal/index.scss";
+@import "../../app/pages/assigned-projects/index.scss";
+
+%row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+%column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%flex-div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background: $background-color;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $primary-color;
+    border: 3px solid $background-color;
+}
+
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.col-text {
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.login-layout {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+
+    .login-label {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .login-photo {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-image: url("../images/login-photo.png");
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 15%;
+        width: 100%;
+
+        .ant-form {
+            width: 70%;
+        }
+
+        .ant-form-item {
+            margin: 0px 0px 0px 0px !important;
+        }
+
+        .custom-input {
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        .custom-primary-btn {
+            margin-top: 30px;
+        }
+    }
+}
+
+.forgot-password {
+    color: $primary-color;
+    margin-top: -10px;
+}
+
+.site-layout .site-layout-background {
+    position: sticky;
+    top: 0;
+    background: $primary-color;
+    margin-left: -100px;
+    z-index: 999;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px !important;
+    padding-right: 40px !important;
+    padding-bottom: 2vh;
+
+    .header-btn {
+        border: 0px;
+        background: inherit;
+        color: #fff;
+
+        .anticon svg {
+            font-size: 24px;
+        }
+    }
+
+    .left {
+        position: absolute;
+        margin-top: 2.5vh;
+    }
+
+    .company-logo {
+        margin-left: 100px;
+        width: 12vh;
+    }
+
+    .page-name {
+        h1 {
+            text-transform: uppercase;
+            font-size: 26px;
+            color: #fff;
+            padding-right: 100px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.home-layout {
+    margin-top: 220px;
+    @extend %column-center;
+
+    .home-welcome {
+        @extend %column-center;
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: -8px;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}
+
+.error-layout {
+    width: 100%;
+    @extend %flex-div-center;
+    flex-direction: column;
+    background: #fff;
+    height: 95%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.home-block-content {
+    border-radius: 10px;
+    padding: 0px 40px 40px 40px;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+
+    .home-page-btn {
+        width: 170px;
+        height: 170px;
+        color: $primary-color;
+        border-radius: 10%;
+        border-color: $background-color;
+        margin: 25px;
+        @extend %flex-div-center;
+        flex-direction: column;
+        will-change: transform;
+        transition: transform 450ms;
+
+        .btn-label {
+            font-size: 21px;
+            font-weight: 500;
+            color: $primary-color;
+            padding-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        .icon-background {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: $background-color;
+            @extend %flex-div-center;
+
+            .anticon {
+                font-size: 42px;
+            }
+        }
+    }
+
+    .home-page-btn:hover {
+        color: $focus-color;
+        transition: transform 400ms;
+        transform: translateY(-10px);
+
+        .btn-label {
+            color: $focus-color;
+        }
+    }
+}
+
+.custom-drawer .ant-drawer-body {
+    padding: 0px 0px 0px 0px;
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-color: #40a9ff;
+    }
+
+    .drawer-section {
+        @extend %row-center;
+        height: 80px;
+        width: 100%;
+        border: 0px 2px 0px 0px solid #f6f6f6;
+
+        .drawer-btn {
+            padding-left: 40px;
+            @extend %row-center;
+            background: inherit;
+            font-size: 28px;
+            border: 0px;
+
+            p {
+                margin: 0px;
+                padding-left: 30px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+
+        .drawer-btn:hover {
+            color: #389efd;
+        }
+    }
+}
+
+.ant-notification-notice {
+    border-radius: 4px;
+}
+
+.ant-pagination-item-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: $primary-color;
+    border-width: 2px;
+
+    a {
+        color: $primary-color;
+    }
+}
+
+.ant-pagination-item:hover {
+    border-color: $primary-color;
+
+    a {
+        color: $primary-color;
+    }
+}
+
+.ant-pagination-item-link:hover {
+    border-color: $primary-color;
+
+    span {
+        color: $primary-color;
+    }
+}
+
+.global-spin {
+    position: absolute;
+    height: 100vh;
+    z-index: 1000;
+    width: 100vw;
+    background: #03136f28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .ant-spin-spinning {
+        position: fixed;
+        top: 50vh;
+        left: 50vw;
+    }
+}
+
+.additional-header-props {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .custom-select {
+        margin-right: 40px;
+        margin-top: 15px;
+
+        .ant-select {
+            text-align: left;
+            color: #fff;
+        }
+
+        .ant-select-arrow {
+            color: #fff;
+        }
+    }
+}
+
+.report-type-dropdown {
+    .rc-virtual-list {
+        border: 2px solid #fff;
+    }
+
+    .ant-select-item {
+        background-color: #f5f5f5;
+    }
+
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+        background-color: #e2e2e2;
+        color: #000;
+    }
+
+    .ant-select-item-option-selected {
+        color: #fff !important;
+        background-color: #03146f !important;
+    }
+}
+
+.ant-table-body::-webkit-scrollbar {
+    height: 8px;
+    background-color: none;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.187);
+    width: 319.622px;
+    height: 8px;
+    border-radius: 5px;
+    transform: translate3d(135.839px, 0px, 0px);
+}
+
+.ant-table-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.343);
+}

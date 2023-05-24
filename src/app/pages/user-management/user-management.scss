@@ -1,0 +1,20 @@
+.user-manage-layout{
+    .custom-table-row:hover {
+        cursor: pointer;
+    
+        .col-text, .anticon  {
+            color: $focus-color;
+        }
+    
+        .delete-btn {
+            .col-text, .anticon  {
+                color: initial;
+            }
+        }
+        .ant-switch{
+            .anticon  {
+                color: $background-color;
+            }
+        }
+    }
+}

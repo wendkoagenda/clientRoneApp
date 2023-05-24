@@ -1,0 +1,447 @@
+$btn-color: #EBF5FF;
+$placeholder-color: #505050;
+
+.ant-input::placeholder {
+    color: $placeholder-color !important;
+    font-style: italic;
+}
+
+.ant-select-selection-placeholder {
+    color: $placeholder-color !important;
+    font-style: italic;
+}
+
+.ant-upload-drag-icon {
+    .anticon {
+        color: $primary-color !important;
+    }
+}
+
+.custom-default-btn .ant-btn:focus,
+.custom-primary-btn .ant-btn:focus,
+.custom-search-btn .ant-btn:focus,
+.custom-default-btn .ant-btn:hover,
+.custom-primary-btn .ant-btn:hover,
+.custom-search-btn .ant-btn:hover {
+    box-shadow: inset 0 0 25px rgba(65, 132, 255, 0.55), 0px 5px 10px 2px rgba(34, 60, 80, 0.2) !important;
+}
+
+.signature-component {
+    .ant-upload.ant-upload-select-picture-card {
+        width: 331px !important;
+        height: 170px !important;
+
+        span {
+            overflow: hidden !important;
+        }
+    }
+
+    width: 379px !important;
+}
+
+/************************************CUSTOM INPUT STYLE*******************************************/
+.custom-input-label {
+    position: absolute;
+    margin-top: -17px;
+    color: $primary-color;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.input-label-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.input-label-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 400ms, transform 400ms;
+}
+
+.input-label-exit {
+    opacity: 1;
+}
+
+.input-label-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 400ms, transform 400ms;
+}
+
+.custom-input {
+
+    .ant-input {
+        background-color: inherit !important;
+        border: 0 none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0px;
+        padding-top: 0px;
+        border-bottom: 2px solid #DEDEDE;
+    }
+
+    .ant-input[disabled] {
+        color: black;
+    }
+
+    .ant-input:focus,
+    .ant-input:hover {
+        border: 0 none;
+        box-shadow: inherit;
+        border-bottom: 2px solid $primary-color;
+    }
+
+    .ant-form-item-has-error .ant-input-affix-wrapper-focused,
+    .ant-form-item-has-error .ant-input-affix-wrapper:focus,
+    .ant-form-item-has-error .ant-input-focused,
+    .ant-form-item-has-error .ant-input:focus {
+        border: 0 none;
+        box-shadow: 0 0 0 1px inherit;
+        border-bottom: 2px solid #ff4d4f;
+    }
+
+    .ant-input-number {
+        background-color: inherit !important;
+        border: 0 none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0px;
+        padding-top: 0px;
+        border-bottom: 2px solid #DEDEDE;
+        width: 100%;
+
+        .ant-input-number-input-wrap {
+            input {
+                background-color: inherit !important;
+                border: 0 none;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .ant-input-number-focused {
+        border: 0 none;
+        box-shadow: inherit;
+        border-bottom: 2px solid $primary-color;
+    }
+
+    .ant-input-number[disabled] {
+        color: black;
+    }
+}
+
+.ant-form-item-has-error .ant-input-affix-wrapper-focused,
+.ant-form-item-has-error .ant-input-affix-wrapper:focus,
+.ant-form-item-has-error .ant-input-focused,
+.ant-form-item-has-error .ant-input:focus {
+    box-shadow: none !important;
+}
+
+.ant-form-item-has-error .ant-input-number-affix-wrapper-focused,
+.ant-form-item-has-error .ant-input-number-affix-wrapper:focus,
+.ant-form-item-has-error .ant-input-number-focused,
+.ant-form-item-has-error .ant-input-number:focus {
+    box-shadow: none !important;
+}
+
+/***********************************************CUSTOM BUTTON STYLE***********************************************/
+%custom-btn {
+    .ant-btn {
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 25px;
+        box-shadow: 0px 2px 5px 5px rgba(173, 173, 173, 0.2);
+        border: none;
+        transition: 1000ms;
+        height: 40px;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    .ant-btn-icon-only {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.custom-default-btn {
+    @extend %custom-btn;
+
+    .ant-btn {
+        background: $btn-color;
+        color: $primary-color;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        color: $primary-color;
+    }
+}
+
+.custom-primary-btn {
+    @extend %custom-btn;
+
+    .ant-btn {
+        background: $primary-color;
+        color: #fff;
+    }
+
+    .ant-btn:focus,
+    .ant-btn:hover {
+        background: #0929e2;
+        color: #fff;
+    }
+}
+
+///////////////////////////////////////
+.user-manage-top {
+    .custom-primary-btn {
+        padding-right: 20px;
+
+        .anticon svg {
+            font-size: 16px;
+        }
+
+        .ant-btn {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+    }
+}
+
+/***************************************CUSTOM SEARCH STYLE***********************************/
+.custom-search-btn {
+    @extend %custom-btn;
+
+    .ant-btn {
+        background: #fff;
+        color: $primary-color;
+    }
+}
+
+.search-input {
+    padding-left: 8px;
+
+    .ant-input {
+        padding-left: 10px !important;
+        width: 250px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .ant-input-affix-wrapper {
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 5px 5px rgba(173, 173, 173, 0.2);
+        border: none;
+
+        .ant-input-prefix {
+            margin-right: 0px;
+        }
+
+        .anticon svg {
+            font-size: 24px;
+            color: #BFBFBF;
+        }
+    }
+}
+
+.search-input:focus,
+.search-input:hover {
+    .ant-input-affix-wrapper {
+        box-shadow: 4px 2px 5px 5px rgba(122, 122, 122, 0.2);
+        transition: all 400ms;
+        transform: translateY(-5px);
+    }
+}
+
+/******************************************CUSTOM SIDER STYLE****************************************/
+.custom-sider {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    background: #fff;
+
+    .default-menu-item {
+        margin-top: 45px !important;
+    }
+
+    .action-menu-item {
+        margin-top: 59px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .anticon svg {
+        font-size: 24px;
+    }
+
+    .ant-layout-sider {
+        background: #fff;
+    }
+
+    .ant-menu-inline-collapsed {
+        width: 100px;
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+        border-right: 0px;
+    }
+
+    .ant-menu-inline .ant-menu-item:not(:last-child),
+    .ant-menu-vertical-left .ant-menu-item:not(:last-child),
+    .ant-menu-vertical-right .ant-menu-item:not(:last-child),
+    .ant-menu-vertical .ant-menu-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: $primary-color;
+        color: #fff;
+        display: inline-block;
+    }
+
+    .ant-menu-inline-collapsed>.ant-menu-item,
+    .ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item,
+    .ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title,
+    .ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title {
+        left: 0;
+        margin-top: 90px;
+        padding: 0 calc(50% - 35px);
+        text-overflow: clip;
+        height: 60px;
+        padding-top: 15%;
+        border-radius: 50%;
+        background-color: #F7F7F7;
+        text-align: center;
+        width: 60px;
+    }
+
+    .ant-menu-item:hover {
+        color: #389efd;
+    }
+
+    .ant-menu-inline-collapsed {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ant-layout-sider-trigger {
+        display: none;
+    }
+}
+
+/*********************************************CUSTOM SELECT STYLE***********************************************/
+.custom-select {
+    .ant-select-multiple .ant-select-selection-search {
+        margin-left: 0px;
+    }
+
+    .ant-select-selection-overflow-item {
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ant-select-single .ant-select-selector .ant-select-selection-search {
+        left: 0px !important;
+    }
+
+    .ant-select-multiple .ant-select-selection-placeholder {
+        left: 0px;
+    }
+
+    .ant-select-selector {
+        min-height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: inherit !important;
+        border: none !important;
+        padding-left: 0px !important;
+        border-bottom: 2px solid #DEDEDE !important;
+    }
+
+    .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        background-color: inherit !important;
+        border: none;
+        padding-left: 0px;
+        border-bottom: 2px solid #DEDEDE;
+    }
+
+    .ant-select-selector:hover {
+        border-bottom: 2px solid $primary-color !important;
+    }
+
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+
+    .ant-select-multiple .ant-select-selection-item {
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+        font-size: 16px;
+
+        .anticon .anticon-close {
+            font-size: 14px;
+        }
+    }
+
+    .ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector input {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+.ant-select-dropdown {
+    padding: 0px !important;
+}
+
+.ant-select-item-option-content {
+    height: 30px;
+    margin: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.select-all-option {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.tooltip-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.crop-text-body {
+    font-size: 16px;
+}

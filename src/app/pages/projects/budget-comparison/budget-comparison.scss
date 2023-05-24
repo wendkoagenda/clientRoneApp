@@ -1,0 +1,54 @@
+.cell-with-dollar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+        margin-bottom: 0px;
+        margin-right: 5px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.budget-comparison-collapse {
+    .ant-collapse-header {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .ant-table-thead {
+        font-size: 17px;
+    }
+    
+    .ant-collapse {
+        width: 100%;
+        border: 0px solid;
+    }
+}
+
+.projects-layout {
+    .filter-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+
+        p {
+            margin-bottom: 0px;
+            font-size: 16px;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        .ant-picker {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.comparison-export {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}

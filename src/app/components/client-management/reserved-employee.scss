@@ -1,0 +1,62 @@
+.reserved-employee-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #EBF5FF;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .property-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .anticon {
+            font-size: 24px;
+        }
+
+        p {
+            font-weight: 500;
+            margin-left: 15px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .actions {
+        justify-content: space-around;
+
+        .anticon {
+            font-size: 28px;
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.reserved-employee-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.reserved-employee-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 400ms, transform 400ms;
+}
+
+.reserved-employee-exit {
+    opacity: 1;
+}
+
+.reserved-employee-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 400ms, transform 400ms;
+}  

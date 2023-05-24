@@ -1,0 +1,52 @@
+.DS_Store
+
+# dotnet core
+bin/
+obj/
+project.lock.json
+NuGetScratch/
+
+api/wwwroot/**
+!api/wwwroot/scratch.html
+!api/wwwroot/favicon.ico
+
+# node
+node_modules/
+typings/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+
+# client-react
+/client-react/build
+/client-react/dist
+
+# ops
+ops/hosts
+ops/config.yml
+ops/*.retry
+
+# other
+*.js.map
+
+# IDE
+.idea/
+.vs/
+
+api/log/
+client-react/.vscode/settings.json
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode is a .NET coding addin-in
+.JustCode
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
